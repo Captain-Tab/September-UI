@@ -1,0 +1,17 @@
+.s-button[data-v-30d3d2] {
+  height: var(--button-height);
+  padding: 0 1em;
+  font: inherit;
+  border-radius: var(--border-radius);
+  border: 1px solid var(--border-color);
+  background: var(--button-bg);
+}
+.s-button[data-v-30d3d2]:hover {
+  border-color: var(--border-color);
+}
+.s-button[data-v-30d3d2]:active {
+  background-color: var(--button-active-bg);
+}
+.s-button[data-v-30d3d2]:focus {
+  outline: none;
+}
