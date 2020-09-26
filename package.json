@@ -19,5 +19,8 @@
   "bugs": {
     "url": "https://github.com/Captain-Tab/september-UI/issues"
   },
-  "homepage": "https://github.com/Captain-Tab/september-UI#readme"
+  "homepage": "https://github.com/Captain-Tab/september-UI#readme",
+  "dependencies": {
+    "vue": "^2.6.12"
+  }
 }
