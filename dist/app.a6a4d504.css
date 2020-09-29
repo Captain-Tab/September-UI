@@ -2,6 +2,7 @@
   height: var(--button-height);
   padding: 0 1em;
   font: inherit;
+  color: var(--color);
   border-radius: var(--border-radius);
   border: 1px solid var(--border-color);
   background: var(--button-bg);
@@ -11,6 +12,8 @@
 }
 .s-button[data-v-30d3d2]:active {
   background-color: var(--button-active-bg);
+  box-shadow: var(--box-show);
+  color: #FFFFFF;
 }
 .s-button[data-v-30d3d2]:focus {
   outline: none;
