@@ -38,20 +38,19 @@
 <body>
 
 <div id="app">
-    <s-button>
+    <s-button :loading="isLoading" @click="isLoading =!isLoading">
         九月
     </s-button>
-    <s-button icon="setting">
+    <s-button icon="setting" :loading="true">
         九月
     </s-button>
 
-    <s-button icon="setting" icon-position="right">
+    <s-button icon="setting" icon-position="right" :loading="true">
         九月
     </s-button>
-    <s-icon name="download"></s-icon>
 </div>
 
 <script src="/app.a6a4d504.js"></script>
-<script src="//at.alicdn.com/t/font_1664146_khigl7fbq4g.js"></script>
+<script src="//at.alicdn.com/t/font_1664146_jtexjk28wzc.js"></script>
 </body>
 </html>

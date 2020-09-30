@@ -1,3 +1,11 @@
+@keyframes spin-data-v-30d3d2 {
+0% {
+    transform: rotate(0deg);
+}
+100% {
+    transform: rotate(360deg);
+}
+}
 .s-button[data-v-30d3d2] {
   height: var(--button-height);
   padding: 0 1em;
@@ -36,6 +44,9 @@
   order: 2;
   margin-right: 0;
   margin-left: 0.3em;
+}
+.s-button .loading[data-v-30d3d2] {
+  animation: spin-data-v-30d3d2 2s infinite linear;
 }
 .s-icon[data-v-310fe5] {
   width: 1em;
