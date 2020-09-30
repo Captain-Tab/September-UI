@@ -6,6 +6,10 @@
   border-radius: var(--border-radius);
   border: 1px solid var(--border-color);
   background: var(--button-bg);
+  vertical-align: middle;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
 }
 .s-button[data-v-30d3d2]:hover {
   border-color: var(--border-color);
@@ -17,4 +21,19 @@
 }
 .s-button[data-v-30d3d2]:focus {
   outline: none;
+}
+.s-button > .content[data-v-30d3d2] {
+  order: 2;
+}
+.s-button > .icon[data-v-30d3d2] {
+  order: 1;
+  margin-right: 0.3em;
+}
+.s-button.icon-right > .content[data-v-30d3d2] {
+  order: 1;
+}
+.s-button.icon-right > .icon[data-v-30d3d2] {
+  order: 2;
+  margin-right: 0;
+  margin-left: 0.3em;
 }

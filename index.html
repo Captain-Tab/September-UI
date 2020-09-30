@@ -7,36 +7,52 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>September-UI</title>
     <style>
-        * {margin: 0;padding: 0;box-sizing: border-box}
-        html{
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box
+        }
+
+        html {
             --button-height: 32px;
             --font-size: 14px;
             --button-bg: #FFFFFF;
             --button-active-bg: #007bff;
             --border-radius: 4px;
-            --color:#007bff;
+            --color: #007bff;
             --border-color: #007bff;;
             --border-color-hover: #666;
-            --box-show: 0 0 0 0.2rem rgba(0,123,255,.5);
+            --box-show: 0 0 0 0.2rem rgba(0, 123, 255, .5);
         }
+
         #app {
             margin: 20px;
         }
+
         body {
             font-size: var(--font-size);
         }
     </style>
     <style>
-      .icon {
-          width: 1em;
-          height: 0.8em;
-      }
+        .icon {
+            width: 1em;
+            height: 1em;
+        }
     </style>
 </head>
 <body>
 
 <div id="app">
-    <s-button>九月</s-button>
+    <s-button>
+        九月
+    </s-button>
+    <s-button icon="setting">
+        九月
+    </s-button>
+
+    <s-button icon="setting" icon-position="right">
+        九月
+    </s-button>
 </div>
 
 <script src="./src/app.js"></script>
