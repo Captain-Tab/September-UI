@@ -46,13 +46,23 @@
     <s-button :loading="isLoading" @click="isLoading =!isLoading">
         九月
     </s-button>
-    <s-button icon="setting" :loading=true>
+    <s-button icon="setting">
         九月
     </s-button>
 
     <s-button icon="setting" icon-position="right" :loading=true>
         九月
     </s-button>
+   <s-button-group>
+       <div></div>
+       <s-button icon="left" >
+           上一页
+       </s-button>
+       <s-button icon="right" icon-position="right" >
+           下一页
+       </s-button>
+   </s-button-group>
+
 </div>
 
 <script src="./src/app.js"></script>

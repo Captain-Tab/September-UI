@@ -52,3 +52,25 @@
   width: 1em;
   height: 1em;
 }
+.s-button-group[data-v-18ff75] {
+  display: inline-flex;
+  vertical-align: middle;
+}
+.s-button-group > .s-button[data-v-18ff75] {
+  border-radius: 0;
+}
+.s-button-group > .s-button[data-v-18ff75]:not(:first-child) {
+  margin-left: -1px;
+}
+.s-button-group > .s-button[data-v-18ff75]:first-child {
+  border-top-left-radius: var(--border-radius);
+  border-bottom-left-radius: var(--border-radius);
+}
+.s-button-group > .s-button[data-v-18ff75]:last-child {
+  border-top-right-radius: var(--border-radius);
+  border-bottom-right-radius: var(--border-radius);
+}
+.s-button-group > .s-button[data-v-18ff75]:hover {
+  position: relative;
+  z-index: 1;
+}

@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4546e41c-e8f2-4e8f-8e80-83b9cfc44633" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/ButtonGroup.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/app.a6a4d504.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/app.a6a4d504.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/app.a6a4d504.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/app.a6a4d504.js" afterDir="false" />
@@ -12,7 +14,6 @@
       <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Button.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/Button.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -45,7 +46,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.appearance" />
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -60,7 +61,7 @@
       <workItem from="1601301264645" duration="1817000" />
       <workItem from="1601371263427" duration="1952000" />
       <workItem from="1601389507484" duration="52000" />
-      <workItem from="1601430988451" duration="7355000" />
+      <workItem from="1601430988451" duration="9546000" />
     </task>
     <servers />
   </component>
@@ -80,9 +81,10 @@
     </state>
     <state x="452" y="159" key="RollbackChangesDialog/0.0.1440.900@0.0.1440.900" timestamp="1601109319032" />
     <state x="452" y="166" key="RollbackChangesDialog/0.23.1440.809@0.23.1440.809" timestamp="1601109522822" />
-    <state x="221" y="89" key="SettingsEditor" timestamp="1601113871381">
-      <screen x="0" y="0" width="1440" height="900" />
+    <state x="-1625" y="107" key="SettingsEditor" timestamp="1601447527546">
+      <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
+    <state x="-1625" y="107" key="SettingsEditor/0.0.1440.900/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1601447527546" />
     <state x="221" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1601113871381" />
     <state x="221" y="103" key="SettingsEditor/0.23.1440.809@0.23.1440.809" timestamp="1601112776792" />
     <state x="-1380" y="178" width="894" height="903" key="search.everywhere.popup" timestamp="1601431181254">
