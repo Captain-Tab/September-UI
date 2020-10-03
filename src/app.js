@@ -16,6 +16,8 @@ new Vue({
 
 // 单元测试
 import chai from 'chai'
+import spies from 'chai-spies'
+chai.use(spies)
 
 const expect = chai.expect
 {
@@ -57,9 +59,9 @@ const expect = chai.expect
         }
     })
     vm.$mount()
-    vm.$on('click', function () {
-        console.log(1)
-    })
+    let spy = chai.spy(function (){})
+    vm.$on('click', spy)
     let svg = button.$el// 获取组件的svg元素
     button.click()
+    expect(spy).to.have.been.called()
 }
