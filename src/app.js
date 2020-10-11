@@ -57,11 +57,25 @@ const expect = chai.expect
         propsData: {
             icon: 'setting'
         }
+    }).$mount()
+    vm.$on('click', function (){
+        expect(1).to.eq(1)
     })
-    vm.$mount()
-    let spy = chai.spy(function (){})
+    let button  = vm.$el
+    button.click()
+}
+{
+    //
+    const Constructor = Vue.extend(Button) // 将vue组件转化为构造函数
+    const vm = new Constructor({
+        propsData: {
+            icon: 'setting'
+        }
+    }).$mount()
+    let spy = chai.spy(()=>{})
     vm.$on('click', spy)
-    let svg = button.$el// 获取组件的svg元素
+    let button  = vm.$el
     button.click()
     expect(spy).to.have.been.called()
 }
+
