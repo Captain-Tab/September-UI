@@ -16,66 +16,85 @@ new Vue({
 
 // 单元测试
 import chai from 'chai'
-import spies from 'chai-spies'
-chai.use(spies)
 
 const expect = chai.expect
+// 单元测试
 {
-    const Constructor = Vue.extend(Button) // 将vue组件转化为构造函数
-    const button = new Constructor({
+    const Constructor = Vue.extend(Button)
+    const vm = new Constructor({
         propsData: {
-            icon: 'setting'
+            icon: 'settings'
         }
-    }) // 通过构造函数构造新的button组件
-    button.$mount('#test')
-    let useElement = button.$el.querySelector('use') // 获取组件的use元素
-   let href = useElement.getAttribute('xlink:href')
-    expect(href).to.eq('#s-setting') // 期望组件的链接为s-setting
-    button.$el.remove()
-    button.$destroy()
+    })
+    vm.$mount()
+    let useElement = vm.$el.querySelector('use')
+    let href = useElement.getAttribute('xlink:href')
+    expect(href).to.eq('#s-settings')
+    vm.$el.remove()
+    vm.$destroy()
 }
 {
-    const Constructor = Vue.extend(Button) // 将vue组件转化为构造函数
-    const button = new Constructor({
+    const Constructor = Vue.extend(Button)
+    const vm = new Constructor({
         propsData: {
-            icon: 'setting'
+            icon: 'settings',
+            loading: true
         }
-    }) // 通过构造函数构造新的button组件
+    })
+    vm.$mount()
+    let useElement = vm.$el.querySelector('use')
+    let href = useElement.getAttribute('xlink:href')
+    expect(href).to.eq('#s-loading')
+    vm.$el.remove()
+    vm.$destroy()
+}
+{
     const div = document.createElement('div')
     document.body.appendChild(div)
-    button.$mount(div)
-    let svg = button.$el.querySelector('svg') // 获取组件的svg元素
-    let { order } = window.getComputedStyle(svg)
-    expect(order).to.eq('1') // 期望组件的位置为1
-    button.$el.remove()
-    button.$destroy()
-}
-{
-    //
-    const Constructor = Vue.extend(Button) // 将vue组件转化为构造函数
+    const Constructor = Vue.extend(Button)
     const vm = new Constructor({
         propsData: {
-            icon: 'setting'
+            icon: 'settings'
         }
-    }).$mount()
-    vm.$on('click', function (){
+    })
+    vm.$mount(div)
+    let svg = vm.$el.querySelector('svg')
+    let {order} = window.getComputedStyle(svg)
+    expect(order).to.eq('1')
+    vm.$el.remove()
+    vm.$destroy()
+}
+{
+    const div = document.createElement('div')
+    document.body.appendChild(div)
+    const Constructor = Vue.extend(Button)
+    const vm = new Constructor({
+        propsData: {
+            icon: 'settings',
+            iconPosition: 'right'
+        }
+    })
+    vm.$mount(div)
+    let svg = vm.$el.querySelector('svg')
+    let {order} = window.getComputedStyle(svg)
+    expect(order).to.eq('2')
+    vm.$el.remove()
+    vm.$destroy()
+}
+{
+    // mock
+    const Constructor = Vue.extend(Button)
+    const vm = new Constructor({
+        propsData: {
+            icon: 'settings',
+        }
+    })
+    vm.$mount()
+    vm.$on('click', function () {
         expect(1).to.eq(1)
     })
-    let button  = vm.$el
+    // 希望这个函数被执行
+    let button = vm.$el
     button.click()
-}
-{
-    //
-    const Constructor = Vue.extend(Button) // 将vue组件转化为构造函数
-    const vm = new Constructor({
-        propsData: {
-            icon: 'setting'
-        }
-    }).$mount()
-    let spy = chai.spy(()=>{})
-    vm.$on('click', spy)
-    let button  = vm.$el
-    button.click()
-    expect(spy).to.have.been.called()
 }
 
