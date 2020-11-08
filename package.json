@@ -1,8 +1,8 @@
 {
   "name": "sepetember-ui",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "this is an UI library ",
-  "main": "index.js",
+  "main": "dist/index.js",
   "scripts": {
     "dev-test": "parcel watch test/* --no-cache & karma start",
     "test": "parcel build test/* --no-minify && karma start --single-run"
@@ -22,6 +22,7 @@
   },
   "homepage": "https://github.com/Captain-Tab/september-UI#readme",
   "dependencies": {
+    "user": "0.0.0",
     "vue": "^2.6.12",
     "vue-hot-reload-api": "^2.3.4"
   },
