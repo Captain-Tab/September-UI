@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4546e41c-e8f2-4e8f-8e80-83b9cfc44633" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.travis.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.travis.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/button.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/button.test.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +59,7 @@
       <workItem from="1603113266335" duration="20000" />
       <workItem from="1603113317573" duration="1258000" />
       <workItem from="1603114902692" duration="1831000" />
-      <workItem from="1604803435049" duration="2389000" />
+      <workItem from="1604803435049" duration="2601000" />
     </task>
     <servers />
   </component>
@@ -100,5 +99,17 @@
     <state x="-1380" y="178" width="894" height="903" key="search.everywhere.popup/0.0.1440.900/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1601431181254" />
     <state x="-1380" y="197" width="894" height="884" key="search.everywhere.popup/0.23.1440.809/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1601455802060" />
     <state x="405" y="156" width="672" height="676" key="search.everywhere.popup/0.23.1440.809@0.23.1440.809" timestamp="1602381652522" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/app.js</url>
+          <line>7</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
