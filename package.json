@@ -4,6 +4,7 @@
   "description": "this is an UI library ",
   "main": "dist/index.js",
   "scripts": {
+    "start": "yarn parcel index.html --no-cache",
     "dev-test": "parcel watch test/* --no-cache & karma start",
     "test": "parcel build test/* --no-minify && karma start --single-run"
   },
@@ -36,10 +37,10 @@
     "karma-chrome-launcher": "^3.1.0",
     "karma-mocha": "^2.0.1",
     "karma-sinon-chai": "^2.0.2",
-    "mocha": "^8.2.0",
+    "mocha": "^8.2.1",
     "parcel-bundler": "^1.12.4",
-    "sass": "^1.26.11",
-    "sinon": "^9.2.0",
+    "sass": "^1.29.0",
+    "sinon": "^9.2.1",
     "sinon-chai": "^3.5.0",
     "vue-template-compiler": "^2.6.12"
   },
