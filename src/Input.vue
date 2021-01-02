@@ -4,8 +4,15 @@
       <input
           type="text"
           :value="value"
-          :disabled="disabled">
+          :disabled="disabled"
+          :readonly="readonly"
+          @change="$emit('change', $event)"
+          @input="$emit('input', $event)"
+          @focus="$emit('focus', $event)"
+          @blur="$emit('blur', $event)"
+      >
     </label>
+
     <template v-if="errorText">
       <icon name="error" class="icon"></icon>
       <span class="message">{{ errorText }}</span>

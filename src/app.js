@@ -13,6 +13,11 @@ new Vue({
     el: '#app',
     data : {
         isLoading: false
+    },
+    methods: {
+        test (e) {
+            console.log('test', e)
+        }
     }
 })
 

@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4546e41c-e8f2-4e8f-8e80-83b9cfc44633" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/test/input.test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Input.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/Input.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/svg.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/svg.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -18,8 +19,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="Vue Single File Component" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -71,7 +72,7 @@
       <workItem from="1609376987064" duration="82000" />
       <workItem from="1609377273212" duration="544000" />
       <workItem from="1609378090044" duration="735000" />
-      <workItem from="1609582033692" duration="3956000" />
+      <workItem from="1609582033692" duration="9243000" />
     </task>
     <servers />
   </component>
@@ -105,12 +106,13 @@
       <screen x="-1920" y="0" width="1920" height="1080" />
     </state>
     <state x="-1820" y="100" width="1720" height="880" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1440.900/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1601447884976" />
-    <state x="405" y="156" width="672" height="676" key="search.everywhere.popup" timestamp="1602381652522">
-      <screen x="0" y="23" width="1440" height="809" />
+    <state x="405" y="157" width="672" height="671" key="search.everywhere.popup" timestamp="1609595346086">
+      <screen x="0" y="25" width="1440" height="802" />
     </state>
     <state x="-1380" y="178" width="894" height="903" key="search.everywhere.popup/0.0.1440.900/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1601431181254" />
     <state x="-1380" y="197" width="894" height="884" key="search.everywhere.popup/0.23.1440.809/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1601455802060" />
     <state x="405" y="156" width="672" height="676" key="search.everywhere.popup/0.23.1440.809@0.23.1440.809" timestamp="1602381652522" />
+    <state x="405" y="157" width="672" height="671" key="search.everywhere.popup/0.25.1440.802@0.25.1440.802" timestamp="1609595346086" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
