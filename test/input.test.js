@@ -63,48 +63,17 @@ describe('Input', () => {
         afterEach(function () {
             vm.$destroy()
         })
-        it('支持change事件', ()=>{
-            vm = new Constructor({}).$mount()
-            const callback = sinon.fake()
-            // 触发input的默认事件
-            vm.$on('change', callback)
-            const event = new Event('change')
-            let inputElement = vm.$el.querySelector('input')
-            inputElement.dispatchEvent(event)
-            expect(callback).to.have.been.calledWith(event)
-        })
-
-        it('支持input事件', ()=>{
-            vm = new Constructor({}).$mount()
-            const callback = sinon.fake()
-            // 触发input的默认事件
-            vm.$on('input', callback)
-            const event = new Event('input')
-            let inputElement = vm.$el.querySelector('input')
-            inputElement.dispatchEvent(event)
-            expect(callback).to.have.been.calledWith(event)
-        })
-
-        it('支持focus事件', ()=>{
-            vm = new Constructor({}).$mount()
-            const callback = sinon.fake()
-            // 触发input的默认事件
-            vm.$on('focus', callback)
-            const event = new Event('focus')
-            let inputElement = vm.$el.querySelector('input')
-            inputElement.dispatchEvent(event)
-            expect(callback).to.have.been.calledWith(event)
-        })
-
-        it('支持blur事件', ()=>{
-            vm = new Constructor({}).$mount()
-            const callback = sinon.fake()
-            // 触发input的默认事件
-            vm.$on('blur', callback)
-            const event = new Event('blur')
-            let inputElement = vm.$el.querySelector('input')
-            inputElement.dispatchEvent(event)
-            expect(callback).to.have.been.calledWith(event)
+        it('支持change/input/focus/blur事件', ()=>{
+            ['change','input','focus','blur'].forEach((eventName)=>{
+                vm = new Constructor({}).$mount()
+                const callback = sinon.fake()
+                // 触发input的默认事件
+                vm.$on(eventName, callback)
+                const event = new Event(eventName)
+                let inputElement = vm.$el.querySelector('input')
+                inputElement.dispatchEvent(event)
+                expect(callback).to.have.been.calledWith(event)
+            })
         })
     })
 })
