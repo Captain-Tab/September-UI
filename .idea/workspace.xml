@@ -5,11 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4546e41c-e8f2-4e8f-8e80-83b9cfc44633" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Col.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Row.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Input.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/Input.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/input.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/test/input.test.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -19,8 +19,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Vue Single File Component" />
         <option value="JavaScript File" />
+        <option value="Vue Single File Component" />
       </list>
     </option>
   </component>
@@ -73,7 +73,8 @@
       <workItem from="1609377273212" duration="544000" />
       <workItem from="1609378090044" duration="735000" />
       <workItem from="1609582033692" duration="10762000" />
-      <workItem from="1609771381607" duration="1078000" />
+      <workItem from="1609771381607" duration="1362000" />
+      <workItem from="1609852329115" duration="3023000" />
     </task>
     <servers />
   </component>
@@ -114,16 +115,5 @@
     <state x="-1380" y="197" width="894" height="884" key="search.everywhere.popup/0.23.1440.809/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1601455802060" />
     <state x="405" y="156" width="672" height="676" key="search.everywhere.popup/0.23.1440.809@0.23.1440.809" timestamp="1602381652522" />
     <state x="405" y="157" width="672" height="671" key="search.everywhere.popup/0.25.1440.802@0.25.1440.802" timestamp="1609595346086" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/app.js</url>
-          <line>8</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
   </component>
 </project>
