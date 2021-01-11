@@ -5,8 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4546e41c-e8f2-4e8f-8e80-83b9cfc44633" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Col.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/Col.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Row.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/Row.vue" afterDir="false" />
     </list>
@@ -36,6 +36,7 @@
   </component>
   <component name="PropertiesComponent">
     <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="ASKED_MARK_IGNORED_FILES_AS_EXCLUDED" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
@@ -73,7 +74,9 @@
       <workItem from="1609378090044" duration="735000" />
       <workItem from="1609582033692" duration="10762000" />
       <workItem from="1609771381607" duration="1362000" />
-      <workItem from="1609852329115" duration="4978000" />
+      <workItem from="1609852329115" duration="5335000" />
+      <workItem from="1609894595505" duration="494000" />
+      <workItem from="1610374796833" duration="1026000" />
     </task>
     <servers />
   </component>
