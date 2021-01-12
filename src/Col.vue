@@ -43,8 +43,6 @@ export default {
 <style scoped lang="scss">
 .col {
   height: 100px;
-  width: 50%;
-
   $prefix: col-;
   @for $n from 1 through 24 {
     &.#{$prefix}#{$n} {
