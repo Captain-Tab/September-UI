@@ -49,6 +49,19 @@ export default {
       validator
     },
   },
+  methods: {
+    getClassName (props, name = '') {
+      let result = []
+      if(!props){ return  [] }
+      if(props.span) {
+        result.push(`col-${name}${props.span}`)
+      }
+      if(props.offset) {
+        result.push(`offset-${name}${props.offset}`)
+      }
+      return  result
+    }
+  },
   computed: {
     colStyle () {
       return {
@@ -58,13 +71,13 @@ export default {
     },
     colClass () {
       let { span, offset, pad, smallPc, pc, largePc } = this
+      const getName = this.getClassName
       return [
-        span && `col-${span}`,
-        offset && `offset-${offset}`,
-        ...(pad ? [`col-pad-${pad.span}`] : []),
-        ...(smallPc ? [`col-small-pc-${smallPc.span}`] : []),
-        ...(pc ? [`col-pc-${pc.span}`] : []),
-        ...(largePc ? [`col-large-pc-${largePc.span}`] : []),
+        ...getName({ span, offset }),
+        ...getName(pad , 'pad-'),
+        ...getName(smallPc, 'smallPc-'),
+        ...getName(pc , 'pc-'),
+        ...getName(largePc, 'largePc-')
       ]
     }
   }
