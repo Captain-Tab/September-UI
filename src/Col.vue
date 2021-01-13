@@ -32,10 +32,6 @@ export default {
     offset: {
       type: [Number, String],
     },
-    phone: {
-      type: Object,
-      validator
-    },
     pad: {
       type: Object,
       validator
@@ -61,15 +57,14 @@ export default {
       }
     },
     colClass () {
-      let { span, offset, phone, pad, smallPc, pc, largePc } = this
+      let { span, offset, pad, smallPc, pc, largePc } = this
       return [
         span && `col-${span}`,
         offset && `offset-${offset}`,
-        ...(phone && [`col-phone-${phone.span}`]),
-        ...(pad && [`col-pad-${pad.span}`]),
-        ...(smallPc && [`col-small-pc-${smallPc.span}`]),
-        ...(pc && [`col-pc-${pc.span}`]),
-        ...(largePc && [`col-large-pc-${largePc.span}`]),
+        ...(pad ? [`col-pad-${pad.span}`] : []),
+        ...(smallPc ? [`col-small-pc-${smallPc.span}`] : []),
+        ...(pc ? [`col-pc-${pc.span}`] : []),
+        ...(largePc ? [`col-large-pc-${largePc.span}`] : []),
       ]
     }
   }
@@ -93,25 +88,8 @@ export default {
     }
   }
 
-  // autofill in size of phone
-  @media (max-width: 576px) {
-    $prefix: col-phone-;
-    @for $n from 1 through 24 {
-      &.#{$prefix}#{$n} {
-        width: ($n/24) * 100%;
-      }
-    }
-
-    $prefix: offset-phone-;
-    @for $n from 1 through 24 {
-      &.#{$prefix}#{$n} {
-        margin-left: ($n/24) * 100%;;
-      }
-    }
-  }
-
   // autofill in size of pad
-  @media  (min-width: 577px) and (max-width: 768px) {
+  @media  (min-width: 577px) {
     $prefix: col-pad-;
     @for $n from 1 through 24 {
       &.#{$prefix}#{$n} {
@@ -129,7 +107,7 @@ export default {
 
 
   // autofill in size of small monitor
-  @media  (min-width: 769px) and (max-width: 992px) {
+  @media  (min-width: 769px)  {
     $prefix: col-small-pc-;
     @for $n from 1 through 24 {
       &.#{$prefix}#{$n} {
@@ -146,7 +124,7 @@ export default {
   }
 
   // autofill in size of normal monitor
-  @media  (min-width: 993px) and (max-width: 1200px) {
+  @media  (min-width: 993px)  {
     $prefix: col-pc-;
     @for $n from 1 through 24 {
       &.#{$prefix}#{$n} {
@@ -163,7 +141,7 @@ export default {
   }
 
   // autofill in size of large monitor
-  @media  (min-width: 1201px) {
+  @media  (min-width: 1200px) {
     $prefix: col-large-pc-;
     @for $n from 1 through 24 {
       &.#{$prefix}#{$n} {
