@@ -1,5 +1,3 @@
-import Button from "../src/Button";
-
 const expect = chai.expect;
 import Vue from 'vue'
 import Row from '../src/Row'
@@ -46,5 +44,4 @@ describe('Row', () => {
         expect(getComputedStyle(element).justifyContent).to.equal('flex-end')
         vm.$destroy()
     })
-
 })
