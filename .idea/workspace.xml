@@ -5,9 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4546e41c-e8f2-4e8f-8e80-83b9cfc44633" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/test/col.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/row.test.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Col.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/Col.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Row.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/Row.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,8 +18,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="Vue Single File Component" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -77,7 +78,8 @@
       <workItem from="1609894595505" duration="494000" />
       <workItem from="1610374796833" duration="1234000" />
       <workItem from="1610457232738" duration="5802000" />
-      <workItem from="1610544007894" duration="3983000" />
+      <workItem from="1610544007894" duration="5134000" />
+      <workItem from="1610630326037" duration="2243000" />
     </task>
     <servers />
   </component>
@@ -88,35 +90,16 @@
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="897" y="233" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1604806579692">
-      <screen x="0" y="23" width="1440" height="809" />
+    <state x="895" y="232" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1610548181392">
+      <screen x="0" y="25" width="1440" height="798" />
     </state>
     <state x="897" y="233" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.809@0.23.1440.809" timestamp="1604806579692" />
-    <state x="302" y="23" key="CommitChangelistDialog2" timestamp="1601110788980">
-      <screen x="0" y="23" width="1440" height="809" />
+    <state x="895" y="232" key="#com.intellij.fileTypes.FileTypeChooser/0.25.1440.798@0.25.1440.798" timestamp="1610548181392" />
+    <state x="405" y="156" width="672" height="668" key="search.everywhere.popup" timestamp="1610548360932">
+      <screen x="0" y="25" width="1440" height="798" />
     </state>
-    <state x="302" y="23" key="CommitChangelistDialog2/0.23.1440.809@0.23.1440.809" timestamp="1601110788980" />
-    <state x="452" y="166" key="RollbackChangesDialog" timestamp="1601109522822">
-      <screen x="0" y="23" width="1440" height="809" />
-    </state>
-    <state x="452" y="159" key="RollbackChangesDialog/0.0.1440.900@0.0.1440.900" timestamp="1601109319032" />
-    <state x="452" y="166" key="RollbackChangesDialog/0.23.1440.809@0.23.1440.809" timestamp="1601109522822" />
-    <state x="-1625" y="107" key="SettingsEditor" timestamp="1601447527546">
-      <screen x="-1920" y="0" width="1920" height="1080" />
-    </state>
-    <state x="-1625" y="107" key="SettingsEditor/0.0.1440.900/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1601447527546" />
-    <state x="221" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1601113871381" />
-    <state x="221" y="103" key="SettingsEditor/0.23.1440.809@0.23.1440.809" timestamp="1601112776792" />
-    <state x="-1820" y="100" width="1720" height="880" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1601447884976">
-      <screen x="-1920" y="0" width="1920" height="1080" />
-    </state>
-    <state x="-1820" y="100" width="1720" height="880" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1440.900/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1601447884976" />
-    <state x="405" y="157" width="672" height="671" key="search.everywhere.popup" timestamp="1609595346086">
-      <screen x="0" y="25" width="1440" height="802" />
-    </state>
-    <state x="-1380" y="178" width="894" height="903" key="search.everywhere.popup/0.0.1440.900/-1920.0.1920.1080@-1920.0.1920.1080" timestamp="1601431181254" />
-    <state x="-1380" y="197" width="894" height="884" key="search.everywhere.popup/0.23.1440.809/-1920.23.1920.1057@-1920.23.1920.1057" timestamp="1601455802060" />
     <state x="405" y="156" width="672" height="676" key="search.everywhere.popup/0.23.1440.809@0.23.1440.809" timestamp="1602381652522" />
+    <state x="405" y="156" width="672" height="668" key="search.everywhere.popup/0.25.1440.798@0.25.1440.798" timestamp="1610548360932" />
     <state x="405" y="157" width="672" height="671" key="search.everywhere.popup/0.25.1440.802@0.25.1440.802" timestamp="1609595346086" />
   </component>
 </project>

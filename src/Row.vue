@@ -28,7 +28,7 @@ export default {
     },
     rowClass () {
       let { align } = this
-      return [align-`align-${align}` ]
+      return [`align-${align}` ]
     }
   },
   mounted() {
