@@ -35,7 +35,12 @@ new Vue({
     },
     methods: {
          showToast() {
-           this.$toast('我是toast')
+           this.$toast('我是toast', {
+               text: '测试一下',
+               callback (toast) {
+                   console.log('toast', toast)
+               }
+           })
         }
     }
 })
