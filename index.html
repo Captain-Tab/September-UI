@@ -42,9 +42,8 @@
 
         }
         .demoBox {
-            height: 50px;
-            background: gray;
             border: 1px solid red;
+            min-height: 100px;
         }
     </style>
 </head>
@@ -71,10 +70,18 @@
 <!--   </s-button-group>-->
 <!--    <s-input v-model="message"-->
 <!--     ></s-input>-->
-  <s-row class="topBar" gutter="20">
-      <s-col  class="demoBox" span="13" offset="1" :small-pc="{span: 8, offset: 2}"></s-col>
-      <s-col class="demoBox"></s-col>
-  </s-row>
+<!--  <s-row class="topBar" gutter="20">-->
+<!--      <s-col  class="demoBox" span="13" offset="1" :small-pc="{span: 8, offset: 2}"></s-col>-->
+<!--      <s-col class="demoBox"></s-col>-->
+<!--  </s-row>-->
+    <s-layout style="height: 100vh">
+        <s-header class="demoBox">header</s-header>
+        <s-layout>
+            <s-side>side</s-side>
+            <s-content>content</s-content>
+        </s-layout>
+        <s-footer class="demoBox">footer</s-footer>
+    </s-layout>
 </div>
 
 <div id="test">
