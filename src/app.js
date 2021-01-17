@@ -10,6 +10,7 @@ import Header from "./Header";
 import Side from "./Side";
 import Content from "./Content";
 import Footer from "./Footer";
+import Toast from "./Toast";
 
 Vue.component('s-button', Button)
 Vue.component('s-icon', Icon)
@@ -22,6 +23,7 @@ Vue.component('s-content', Content)
 Vue.component('s-header', Header)
 Vue.component('s-side', Side)
 Vue.component('s-footer', Footer)
+Vue.component('s-toast', Toast)
 
 new Vue({
     el: '#app',
@@ -30,9 +32,12 @@ new Vue({
         message: 'hi'
     },
     methods: {
-        test (e) {
-            console.log('test', e)
+         showToast() {
+           this.$toast('当前功能不稳定!')
         }
+    },
+    created() {
+        this.showToast()
     }
 })
 

@@ -5,13 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4546e41c-e8f2-4e8f-8e80-83b9cfc44633" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Content.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Footer.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Header.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Layout.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Side.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/Toast.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Layout.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/Layout.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -85,7 +82,7 @@
       <workItem from="1610544007894" duration="5134000" />
       <workItem from="1610630326037" duration="3880000" />
       <workItem from="1610706037326" duration="36000" />
-      <workItem from="1610807805781" duration="2834000" />
+      <workItem from="1610807805781" duration="4594000" />
     </task>
     <servers />
   </component>
@@ -107,5 +104,17 @@
     <state x="405" y="156" width="672" height="676" key="search.everywhere.popup/0.23.1440.809@0.23.1440.809" timestamp="1602381652522" />
     <state x="405" y="156" width="672" height="668" key="search.everywhere.popup/0.25.1440.798@0.25.1440.798" timestamp="1610548360932" />
     <state x="405" y="157" width="672" height="671" key="search.everywhere.popup/0.25.1440.802@0.25.1440.802" timestamp="1609595346086" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/src/Toast.vue</url>
+          <line>12</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
