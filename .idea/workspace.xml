@@ -5,10 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4546e41c-e8f2-4e8f-8e80-83b9cfc44633" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Toast.vue" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/plugin.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Layout.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/Layout.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Toast.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/Toast.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -19,8 +19,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="Vue Single File Component" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -82,7 +82,7 @@
       <workItem from="1610544007894" duration="5134000" />
       <workItem from="1610630326037" duration="3880000" />
       <workItem from="1610706037326" duration="36000" />
-      <workItem from="1610807805781" duration="4594000" />
+      <workItem from="1610807805781" duration="6921000" />
     </task>
     <servers />
   </component>
@@ -110,7 +110,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/Toast.vue</url>
-          <line>12</line>
+          <line>10</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="1" />
         </line-breakpoint>
