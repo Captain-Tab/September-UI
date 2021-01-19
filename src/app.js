@@ -1,6 +1,6 @@
 import Vue from 'vue'
 import Button from "./Button";
-import  Icon from './Icon'
+import Icon from './Icon'
 import ButtonGroup from "./ButtonGroup";
 import Input from "./Input";
 import Row from "./Row";
@@ -35,13 +35,17 @@ new Vue({
     },
     methods: {
          showToast() {
-           this.$toast('我是toast', {
-               text: '测试一下',
-               callback (toast) {
-                   console.log('toast', toast)
-               }
-           })
+           // this.$toast('我是toast', {
+           //     text: '测试一下',
+           //     callback (toast) {
+           //         console.log('toast', toast)
+           //     }
+           // })
+           // })
         }
+    },
+    created() {
+        this.$toast('文字', { enableHtml: false })
     }
 })
 

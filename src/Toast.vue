@@ -1,7 +1,10 @@
 <template>
-  <div class="toast">
-    <slot></slot>
-    <div class="line"></div>
+  <div class="toast" ref="wrapper">
+    <div class="message">
+      <slot v-if="!enableHtml"></slot>
+      <div v-else v-html="$slots.default[0]"></div>
+    </div>
+    <div class="line" ref="line"></div>
     <span v-if="closeButton" class="closeButton" @click="onClose">
       {{closeButton.text}}
     </span>
@@ -19,6 +22,10 @@ export default {
     duration: {
       type: Number,
       default: 5
+    },
+    enableHtml: {
+      type: Boolean,
+      default: false
     },
     closeButton :{
       type: Object,
@@ -40,14 +47,23 @@ export default {
       if(this.closeButton && typeof this.closeButton.callback === 'function') {
         this.closeButton.callback(this)
       }
+    },
+    updateStyles () {
+      this.$nextTick( ()=> {
+        this.$refs.line.style.height  = `${this.$refs.wrapper.getBoundingClientRect().height}px`
+      })
+    },
+    closeTab () {
+      if (this.autoClose) {
+        setTimeout(()=>{
+          this.close()
+        },this.duration * 1000)
+      }
     }
   },
   mounted() {
-    if (this.autoClose) {
-      setTimeout(()=>{
-        this.close()
-      },this.duration * 1000)
-    }
+    this.updateStyles()
+    this.closeTab()
   }
 }
 </script>
@@ -64,15 +80,19 @@ $toast-bg: rgba(0,0,0,0.75);
   font-size: $font-size;
   height: $toast-height;
   display: flex;
+  color: white;
   align-items: center;
   background: $toast-bg;
   border-radius: 4px;
-  box-shadow: 0 0 3px 0 rgba(0,0,0,0.50) ;
-  color: #FFFFFF;
-  padding:  0 16px;
+  box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.50);
+  padding: 0 16px;
+}
+.message {
+  padding: 8px 0;
 }
 .closeButton {
   padding-left: 16px;
+  flex-shrink: 0;
 }
 .line {
   height: 100%;
