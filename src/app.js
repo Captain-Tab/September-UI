@@ -36,9 +36,9 @@ new Vue({
     methods: {
          showToast() {
            this.$toast('你的智商需要充值', {
-               autoClose: true,
+               autoClose: false,
                duration: 3,
-               position: 'middle',
+               position: 'bottom',
                enableHtml: false,
                closeButton: {
                    text: '已充值',
