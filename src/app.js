@@ -35,18 +35,20 @@ new Vue({
     },
     methods: {
          showToast() {
-           // this.$toast('我是toast', {
-           //     text: '测试一下',
-           //     callback (toast) {
-           //         console.log('toast', toast)
-           //     }
-           // })
-           // })
+           this.$toast('你的智商需要充值', {
+               autoClose: true,
+               duration: 3,
+               position: 'middle',
+               enableHtml: false,
+               closeButton: {
+                   text: '已充值',
+                   callback () {
+                       console.log('他说已经充值智商了!')
+                   }
+               }
+           })
         }
     },
-    created() {
-        this.$toast('文字', { enableHtml: false })
-    }
 })
 
 // 单元测试
