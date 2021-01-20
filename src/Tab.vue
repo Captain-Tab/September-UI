@@ -5,8 +5,20 @@
 </template>
 
 <script>
+import Vue from 'vue'
+
 export default {
   name: "Tab",
+  data () {
+    return {
+      eventBus: new Vue()
+    }
+  },
+  provide () {
+    return {
+      eventBus: this.eventBus
+    }
+  },
   props: {
     selected: {
       type: String,
@@ -19,8 +31,10 @@ export default {
         return ['horizontal', 'vertical'].indexOf(value) >= 0
       }
     }
+  },
+  mounted() {
+    this.eventBus.$emit('update:selected', this.selected)
   }
-
 }
 </script>
 
