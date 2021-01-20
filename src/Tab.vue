@@ -33,6 +33,9 @@ export default {
     }
   },
   mounted() {
+    if (this.$children.length === 0) {
+      console.warn('Warning: You should create Tab-head and Tab-body as children component')
+    }
     this.$children.forEach((vm)=>{
       if(vm.$options.name === 'Tab-head') {
         const TabHead = vm.$children
