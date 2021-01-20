@@ -1,6 +1,6 @@
 const expect = chai.expect;
 import Vue from 'vue'
-import Toast from '../src/toast'
+import Toast from '../src/Toast'
 
 Vue.config.productionTip = false
 Vue.config.devtools = false
@@ -24,7 +24,7 @@ describe('Toast', () => {
                 done()
             })
         })
-        it('接受 closeButton', () => {
+        it('接受 closeButton', (done) => {
             const callback = sinon.fake();
             const Constructor = Vue.extend(Toast)
             const vm = new Constructor({
@@ -37,8 +37,11 @@ describe('Toast', () => {
             }).$mount()
             let closeButton = vm.$el.querySelector('.closeButton')
             expect(closeButton.textContent.trim()).to.eq('关闭吧')
-            closeButton.click()
-            expect(callback).to.have.been.called
+            setTimeout(()=>{
+                closeButton.click()
+                expect(callback).to.have.been.called
+                done()
+            }, 200)
         })
         it('接受 enableHtml', () => {
             const Constructor = Vue.extend(Toast)
