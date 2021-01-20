@@ -49,7 +49,7 @@
 </head>
 <body>
 
-<div id="app">
+<div id="app" style="padding-top: 100px; padding-left: 100px;">
 <!--    <s-button :loading="isLoading" @click="isLoading =!isLoading">-->
 <!--        九月-->
 <!--    </s-button>-->
@@ -83,33 +83,40 @@
 <!--        <s-footer class="demoBox">footer</s-footer>-->
 <!--    </s-layout>-->
 <!--    <s-button @click="showToast()">点击我</s-button>-->
-    <s-tab :selected.sync="selectedTab">
-        <s-tab-head>
-            <template slot="actions">
-                <button>设置</button>
-            </template>
-            <s-tab-item name="woman" >
-                美女
-            </s-tab-item>
-            <s-tab-item name="finance">
-                财经
-            </s-tab-item>
-            <s-tab-item name="sports" disabled>
-                体育
-            </s-tab-item>
-        </s-tab-head>
-        <s-tab-body>
-            <s-tab-panel name="woman">
-                美女相关资讯
-            </s-tab-panel>
-            <s-tab-panel name="finance">
-                财经相关资讯
-            </s-tab-panel>
-            <s-tab-panel name="sports">
-                体育相关资讯
-            </s-tab-panel>
-        </s-tab-body>
-    </s-tab>
+<!--    <s-tab :selected.sync="selectedTab">-->
+<!--        <s-tab-head>-->
+<!--            <template slot="actions">-->
+<!--                <button>设置</button>-->
+<!--            </template>-->
+<!--            <s-tab-item name="woman" >-->
+<!--                美女-->
+<!--            </s-tab-item>-->
+<!--            <s-tab-item name="finance">-->
+<!--                财经-->
+<!--            </s-tab-item>-->
+<!--            <s-tab-item name="sports" disabled>-->
+<!--                体育-->
+<!--            </s-tab-item>-->
+<!--        </s-tab-head>-->
+<!--        <s-tab-body>-->
+<!--            <s-tab-panel name="woman">-->
+<!--                美女相关资讯-->
+<!--            </s-tab-panel>-->
+<!--            <s-tab-panel name="finance">-->
+<!--                财经相关资讯-->
+<!--            </s-tab-panel>-->
+<!--            <s-tab-panel name="sports">-->
+<!--                体育相关资讯-->
+<!--            </s-tab-panel>-->
+<!--        </s-tab-body>-->
+<!--    </s-tab>-->
+
+    <s-popover>
+        <template slot="content">
+            <div>popover内容</div>
+        </template>
+        <button>点我</button>
+    </s-popover>
 </div>
 
 <div id="test">
