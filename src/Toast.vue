@@ -18,12 +18,11 @@ export default {
   name: "Toast",
   props: {
     autoClose: {
-      type: Boolean,
-      default: true
-    },
-    duration: {
-      type: Number,
-      default: 5
+      type: [Boolean, Number],
+      default: 5,
+      validator (value) {
+        return value === false || typeof  value === 'number'
+      }
     },
     enableHtml: {
       type: Boolean,
@@ -74,7 +73,7 @@ export default {
       if (this.autoClose) {
         setTimeout(()=>{
           this.close()
-        },this.duration * 1000)
+        },this.autoClose * 1000)
       }
     }
   },
