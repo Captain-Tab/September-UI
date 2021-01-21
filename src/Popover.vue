@@ -19,21 +19,21 @@ export default {
   },
   methods: {
     computePosition () {
-      console.log('computePosition');
       document.body.appendChild(this.$refs.contentWrapper)
       let { top, left } = this.$refs.triggerWrapper.getBoundingClientRect()
       this.$refs.contentWrapper.style.left = left + window.scrollX + 'px'
       this.$refs.contentWrapper.style.top = top + window.screenY + 'px'
     },
     clickDocument(e) {
-      console.log('clickDocument');
       if( this.$refs.popover && (this.$refs.popover === e.target || this.$refs.popover.contains(e.target))) {
+        return
+      }
+      if(this.$refs.contentWrapper.contains(e.target)) {
         return
       }
       this.close()
     },
     open () {
-      console.log('open');
       this.visible = true
       this.$nextTick( ()=>{
         this.computePosition()
@@ -41,12 +41,10 @@ export default {
       })
     },
     close() {
-      console.log('close');
       this.visible = false
       document.removeEventListener('click', this.clickDocument)
     },
     onClick (e) {
-      console.log('onClick');
       if (this.$refs.triggerWrapper.contains(e.target)) {
         this.visible === true ? this.close() : this.open()
       }
