@@ -9,16 +9,6 @@ import Vue from 'vue'
 
 export default {
   name: "Tab",
-  data () {
-    return {
-      eventBus: new Vue()
-    }
-  },
-  provide () {
-    return {
-      eventBus: this.eventBus
-    }
-  },
   props: {
     selected: {
       type: String,
@@ -32,20 +22,38 @@ export default {
       }
     }
   },
-  mounted() {
-    if (this.$children.length === 0) {
-      console.warn('Warning: You should create Tab-head and Tab-body as children component')
+  data () {
+    return {
+      eventBus: new Vue()
     }
-    this.$children.forEach((vm)=>{
-      if(vm.$options.name === 'Tab-head') {
-        const TabHead = vm.$children
-        TabHead.forEach((childVm)=>{
-          if(childVm.$options.name === 'Tab-item' && childVm['name'] === this.selected) {
-            this.eventBus.$emit('update:selected', this.selected, childVm)
-          }
-        })
+  },
+  provide () {
+    return {
+      eventBus: this.eventBus
+    }
+  },
+  methods: {
+    checkChildren () {
+      if(this.$children.length === 0) {
+        console.warn('Warning: You should create Tab-head and Tab-body as children component')
       }
-    })
+    },
+    selectTab () {
+      this.$children.forEach((vm)=>{
+        if(vm.$options.name === 'Tab-head') {
+          const TabHead = vm.$children
+          TabHead.forEach((childVm)=>{
+            if(childVm.$options.name === 'Tab-item' && childVm['name'] === this.selected) {
+              this.eventBus.$emit('update:selected', this.selected, childVm)
+            }
+          })
+        }
+      })
+    }
+  },
+  mounted() {
+     this.checkChildren();
+     this.selectTab()
   }
 }
 </script>
