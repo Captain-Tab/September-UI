@@ -8,7 +8,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Popover.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/Popover.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tab.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tab.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +87,7 @@
       <workItem from="1610630326037" duration="3880000" />
       <workItem from="1610706037326" duration="36000" />
       <workItem from="1610807805781" duration="10388000" />
-      <workItem from="1611020526792" duration="47519000" />
+      <workItem from="1611020526792" duration="55016000" />
     </task>
     <servers />
   </component>
@@ -124,7 +123,7 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/Popover.vue</url>
-          <line>138</line>
+          <line>169</line>
           <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="2" />
         </line-breakpoint>

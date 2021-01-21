@@ -1,7 +1,7 @@
 <template>
-  <div class="popover" @click="onClick" ref="popover">
+  <div class="popover" ref="popover">
     <div class="content-wrapper" ref="contentWrapper" v-if="visible" :class="[`position-${position}`]">
-      <slot name="content"></slot>
+      <slot name="content" :hide="close"></slot>
     </div>
     <span class="trigger-wrapper" ref="triggerWrapper">
       <slot></slot>
@@ -19,44 +19,51 @@ export default {
       validator (value) {
         return ['top', 'bottom', 'left', 'right'].indexOf(value) >= 0
       }
+    },
+    trigger: {
+      type: String,
+      default: 'click',
+      validator(value) {
+        return ['click', 'hover'].indexOf(value) >= 0
+      }
     }
   },
   data () {
     return {
-      visible: false
+      visible: false,
     }
   },
   methods: {
     computePosition () {
       const { contentWrapper, triggerWrapper } = this.$refs
       document.body.appendChild(contentWrapper)
-      let {width, height, top, left} = triggerWrapper.getBoundingClientRect()
-      switch (this.position) {
-        case 'top':
-          contentWrapper.style.left = left + window.scrollX + 'px';
-          contentWrapper.style.top = top + window.scrollY + 'px';
-          break
-        case 'bottom':
-          contentWrapper.style.left = left + window.scrollX + 'px';
-          contentWrapper.style.top = top + height + window.scrollY + 'px';
-          break
-        case 'left':
-          contentWrapper.style.left = left + window.scrollX + 'px';
-          let {height: height2} = contentWrapper.getBoundingClientRect();
-          contentWrapper.style.top = top + window.scrollY + (height - height2) / 2 + 'px';
-          break
-        case 'right':
-          contentWrapper.style.left = left + window.scrollX + width + 'px';
-          let {height: height3} = contentWrapper.getBoundingClientRect()
-          contentWrapper.style.top = top + window.scrollY + (height - height3) / 2 + 'px';
-          break
+      const {width, height, top, left} = triggerWrapper.getBoundingClientRect()
+      const { height: height2 } = contentWrapper.getBoundingClientRect()
+      let positionMap = {
+        top: { top: top + window.scrollY,
+            left: left + window.scrollX
+        },
+        bottom: {
+          top: top + height + window.scrollY,
+              left: left + window.scrollX
+        },
+        left: {
+          top: top + window.scrollY + (height - height2) / 2,
+              left: left + window.scrollX
+        },
+        right: {
+          top: top + window.scrollY + (height - height2) / 2,
+              left: left + window.scrollX + width
+        }
       }
+      contentWrapper.style.left = positionMap[this.position].left + 'px'
+      contentWrapper.style.top = positionMap[this.position].top + 'px'
     },
     clickDocument(e) {
       if( this.$refs.popover && (this.$refs.popover === e.target || this.$refs.popover.contains(e.target))) {
         return
       }
-      if(this.$refs.contentWrapper.contains(e.target)) {
+      if(this.$refs.contentWrapper && this.$refs.contentWrapper.contains(e.target)) {
         return
       }
       this.close()
@@ -76,7 +83,27 @@ export default {
       if (this.$refs.triggerWrapper.contains(e.target)) {
         this.visible === true ? this.close() : this.open()
       }
+    },
+    setEvent(isRemove) {
+      const element = this.$refs.popover
+      if(this.trigger === 'click') {
+        isRemove ?
+            element.removeEventListener( 'click', this.onClick) :
+            element.addEventListener('click', this.onClick)
+      }else {
+        isRemove ?
+            element.removeEventListener( 'mouseenter', this.open) &&
+            element.removeEventListener('mouseleave',  this.close) :
+            element.addEventListener( 'mouseenter', this.open) &&
+            element.addEventListener('mouseleave',  this.close)
+      }
     }
+  },
+  mounted() {
+    this.setEvent(false)
+  },
+  beforeDestroy() {
+    this.setEvent(true)
   }
 }
 </script>
@@ -115,10 +142,12 @@ $border-radius: 4px;
     }
     &::before {
       border-top-color: black;
+      border-bottom: none;
       top: 100%;
     }
     &::after {
       border-top-color: white;
+      border-bottom: none;
       top: calc(100% - 1px);
     }
   }
@@ -129,10 +158,12 @@ $border-radius: 4px;
     }
     &::before {
       border-bottom-color: black;
+      border-top: none;
       bottom: 100%;
     }
     &::after {
       border-bottom-color: white;
+      border-top: none;
       bottom: calc(100% - 1px);
     }
   }
@@ -145,10 +176,12 @@ $border-radius: 4px;
     }
     &::before {
       border-left-color: black;
+      border-right: none;
       left: 100%;
     }
     &::after {
       border-left-color: white;
+      border-right: none;
       left: calc(100% - 1px);
     }
 
@@ -163,13 +196,18 @@ $border-radius: 4px;
 
     &::before {
       border-right-color: black;
+      border-left: none;
       right: 100%;
     }
 
     &::after {
       border-right-color: white;
+      border-left: none;
       right: calc(100% - 1px);
     }
   }
+}
+.trigger-wrapper {
+  display: inline-block;
 }
 </style>
