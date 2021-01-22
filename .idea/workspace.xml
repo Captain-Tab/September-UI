@@ -23,7 +23,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4546e41c-e8f2-4e8f-8e80-83b9cfc44633" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Collapse.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/Collapse.vue" afterDir="false" />
@@ -108,7 +107,7 @@
       <workItem from="1610630326037" duration="3880000" />
       <workItem from="1610706037326" duration="36000" />
       <workItem from="1610807805781" duration="10388000" />
-      <workItem from="1611020526792" duration="62588000" />
+      <workItem from="1611020526792" duration="63802000" />
     </task>
     <servers />
   </component>
@@ -136,10 +135,10 @@
     <state x="897" y="233" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.809@0.23.1440.809" timestamp="1604806579692" />
     <state x="895" y="232" key="#com.intellij.fileTypes.FileTypeChooser/0.25.1440.798@0.25.1440.798" timestamp="1610548181392" />
     <state x="1193" y="279" key="#com.intellij.fileTypes.FileTypeChooser/0.25.1920.978@0.25.1920.978" timestamp="1611286402838" />
-    <state x="343" y="25" width="1210" height="978" key="CommitChangelistDialog2" timestamp="1611284237302">
+    <state x="343" y="25" width="1210" height="978" key="CommitChangelistDialog2" timestamp="1611287361535">
       <screen x="0" y="25" width="1920" height="978" />
     </state>
-    <state x="343" y="25" width="1210" height="978" key="CommitChangelistDialog2/0.25.1920.978@0.25.1920.978" timestamp="1611284237302" />
+    <state x="343" y="25" width="1210" height="978" key="CommitChangelistDialog2/0.25.1920.978@0.25.1920.978" timestamp="1611287361535" />
     <state x="338" y="170" width="1131" height="773" key="DiffContextDialog" timestamp="1611284238456">
       <screen x="0" y="25" width="1920" height="978" />
     </state>
