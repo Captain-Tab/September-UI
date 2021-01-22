@@ -3,12 +3,31 @@
   <component name="AutoImportSettings">
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="4546e41c-e8f2-4e8f-8e80-83b9cfc44633" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/Collapse.vue" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/CollapseItem.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Collapse.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/Collapse.vue" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/CollapseItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/CollapseItem.vue" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -89,36 +108,64 @@
       <workItem from="1610630326037" duration="3880000" />
       <workItem from="1610706037326" duration="36000" />
       <workItem from="1610807805781" duration="10388000" />
-      <workItem from="1611020526792" duration="57433000" />
+      <workItem from="1611020526792" duration="62588000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="895" y="232" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1610548181392">
-      <screen x="0" y="25" width="1440" height="798" />
+    <state x="1193" y="279" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1611286402838">
+      <screen x="0" y="25" width="1920" height="978" />
     </state>
     <state x="897" y="233" key="#com.intellij.fileTypes.FileTypeChooser/0.23.1440.809@0.23.1440.809" timestamp="1604806579692" />
     <state x="895" y="232" key="#com.intellij.fileTypes.FileTypeChooser/0.25.1440.798@0.25.1440.798" timestamp="1610548181392" />
+    <state x="1193" y="279" key="#com.intellij.fileTypes.FileTypeChooser/0.25.1920.978@0.25.1920.978" timestamp="1611286402838" />
+    <state x="343" y="25" width="1210" height="978" key="CommitChangelistDialog2" timestamp="1611284237302">
+      <screen x="0" y="25" width="1920" height="978" />
+    </state>
+    <state x="343" y="25" width="1210" height="978" key="CommitChangelistDialog2/0.25.1920.978@0.25.1920.978" timestamp="1611284237302" />
+    <state x="338" y="170" width="1131" height="773" key="DiffContextDialog" timestamp="1611284238456">
+      <screen x="0" y="25" width="1920" height="978" />
+    </state>
+    <state x="338" y="170" width="1131" height="773" key="DiffContextDialog/0.25.1920.978@0.25.1920.978" timestamp="1611284238456" />
     <state x="517" y="168" key="SettingsEditor" timestamp="1611127527625">
       <screen x="0" y="25" width="1920" height="978" />
     </state>
     <state x="517" y="168" key="SettingsEditor/0.25.1920.978@0.25.1920.978" timestamp="1611127527625" />
+    <state x="1340" y="454" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1611284196865">
+      <screen x="0" y="25" width="1920" height="978" />
+    </state>
+    <state x="1340" y="454" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.25.1920.978@0.25.1920.978" timestamp="1611284196865" />
+    <state x="1271" y="328" key="git4idea.ui.GitUnstashDialog" timestamp="1611283891882">
+      <screen x="0" y="25" width="1920" height="978" />
+    </state>
+    <state x="1271" y="328" key="git4idea.ui.GitUnstashDialog/0.25.1920.978@0.25.1920.978" timestamp="1611283891882" />
     <state x="1175" y="236" key="run.anything.popup" timestamp="1611212656038">
       <screen x="0" y="25" width="1920" height="978" />
     </state>
     <state x="1175" y="236" key="run.anything.popup/0.25.1920.978@0.25.1920.978" timestamp="1611212656038" />
-    <state x="540" y="186" width="896" height="819" key="search.everywhere.popup" timestamp="1611138410375">
+    <state x="540" y="186" width="896" height="819" key="search.everywhere.popup" timestamp="1611287136122">
       <screen x="0" y="25" width="1920" height="978" />
     </state>
     <state x="405" y="156" width="672" height="668" key="search.everywhere.popup/0.25.1440.798@0.25.1440.798" timestamp="1610869430603" />
     <state x="405" y="157" width="672" height="671" key="search.everywhere.popup/0.25.1440.802@0.25.1440.802" timestamp="1609595346086" />
-    <state x="540" y="186" width="896" height="819" key="search.everywhere.popup/0.25.1920.978@0.25.1920.978" timestamp="1611138410375" />
+    <state x="540" y="186" width="896" height="819" key="search.everywhere.popup/0.25.1920.978@0.25.1920.978" timestamp="1611287136122" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
