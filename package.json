@@ -6,7 +6,9 @@
   "scripts": {
     "start": "yarn parcel index.html --no-cache",
     "dev-test": "parcel watch test/* --no-cache & karma start",
-    "test": "parcel build test/* --no-minify && karma start --single-run"
+    "test": "parcel build test/* --no-minify && karma start --single-run",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
   },
   "repository": {
     "type": "git",
@@ -27,6 +29,7 @@
     "user": "0.0.0",
     "vue": "^2.6.12",
     "vue-hot-reload-api": "^2.3.4",
+    "vuepress": "^1.8.0",
     "webpack": "^4.36.0"
   },
   "devDependencies": {

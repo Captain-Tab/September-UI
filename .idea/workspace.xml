@@ -23,11 +23,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4546e41c-e8f2-4e8f-8e80-83b9cfc44633" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/docs/install/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/start/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yarn-error.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Collapse.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/Collapse.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/CollapseItem.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/CollapseItem.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/app.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/app.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,8 +38,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="JavaScript File" />
         <option value="Vue Single File Component" />
+        <option value="JavaScript File" />
       </list>
     </option>
   </component>
@@ -107,7 +108,9 @@
       <workItem from="1610630326037" duration="3880000" />
       <workItem from="1610706037326" duration="36000" />
       <workItem from="1610807805781" duration="10388000" />
-      <workItem from="1611020526792" duration="63802000" />
+      <workItem from="1611020526792" duration="64500000" />
+      <workItem from="1611390145181" duration="1378000" />
+      <workItem from="1611391691147" duration="170000" />
     </task>
     <servers />
   </component>
@@ -124,6 +127,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
@@ -172,7 +176,6 @@
         <line-breakpoint enabled="true" type="javascript">
           <url>file://$PROJECT_DIR$/src/Popover.vue</url>
           <line>169</line>
-          <properties lambdaOrdinal="-1" />
           <option name="timeStamp" value="2" />
         </line-breakpoint>
       </breakpoints>
