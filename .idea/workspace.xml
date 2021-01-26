@@ -23,12 +23,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4546e41c-e8f2-4e8f-8e80-83b9cfc44633" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/docs/install/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/start/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yarn-error.log" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/yarn.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/.vuepress/config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docs/components/Button.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/install/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/install/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docs/start/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/start/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +66,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/docs" />
       <recent name="$PROJECT_DIR$/src" />
     </key>
   </component>
@@ -110,7 +111,8 @@
       <workItem from="1610807805781" duration="10388000" />
       <workItem from="1611020526792" duration="64500000" />
       <workItem from="1611390145181" duration="1378000" />
-      <workItem from="1611391691147" duration="170000" />
+      <workItem from="1611391691147" duration="1264000" />
+      <workItem from="1611670987254" duration="2192000" />
     </task>
     <servers />
   </component>
@@ -163,10 +165,10 @@
       <screen x="0" y="25" width="1920" height="978" />
     </state>
     <state x="1175" y="236" key="run.anything.popup/0.25.1920.978@0.25.1920.978" timestamp="1611212656038" />
-    <state x="540" y="186" width="896" height="819" key="search.everywhere.popup" timestamp="1611287136122">
-      <screen x="0" y="25" width="1920" height="978" />
+    <state x="405" y="156" width="672" height="668" key="search.everywhere.popup" timestamp="1611673052835">
+      <screen x="0" y="25" width="1440" height="798" />
     </state>
-    <state x="405" y="156" width="672" height="668" key="search.everywhere.popup/0.25.1440.798@0.25.1440.798" timestamp="1610869430603" />
+    <state x="405" y="156" width="672" height="668" key="search.everywhere.popup/0.25.1440.798@0.25.1440.798" timestamp="1611673052835" />
     <state x="405" y="157" width="672" height="671" key="search.everywhere.popup/0.25.1440.802@0.25.1440.802" timestamp="1609595346086" />
     <state x="540" y="186" width="896" height="819" key="search.everywhere.popup/0.25.1920.978@0.25.1920.978" timestamp="1611287136122" />
   </component>
