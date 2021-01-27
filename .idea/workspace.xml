@@ -23,12 +23,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4546e41c-e8f2-4e8f-8e80-83b9cfc44633" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/docs/.vuepress/config.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docs/components/Button.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/install/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/install/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/start/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/start/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +107,7 @@
       <workItem from="1611020526792" duration="64500000" />
       <workItem from="1611390145181" duration="1378000" />
       <workItem from="1611391691147" duration="1264000" />
-      <workItem from="1611670987254" duration="2192000" />
+      <workItem from="1611670987254" duration="2570000" />
     </task>
     <servers />
   </component>
