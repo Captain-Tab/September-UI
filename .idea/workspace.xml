@@ -25,7 +25,7 @@
     <list default="true" id="4546e41c-e8f2-4e8f-8e80-83b9cfc44633" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docs/.vuepress/components/button-demo.vue" beforeDir="false" afterPath="$PROJECT_DIR$/docs/.vuepress/components/button-demo.vue" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docs/components/Button.md" beforeDir="false" afterPath="$PROJECT_DIR$/docs/components/Button.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Button.vue" beforeDir="false" afterPath="$PROJECT_DIR$/src/Button.vue" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +112,8 @@
       <workItem from="1611670987254" duration="3315000" />
       <workItem from="1611760276165" duration="607000" />
       <workItem from="1612148855786" duration="28000" />
-      <workItem from="1612190739129" duration="468000" />
+      <workItem from="1612190739129" duration="846000" />
+      <workItem from="1615039671256" duration="1039000" />
     </task>
     <servers />
   </component>
