@@ -1,4 +1,5 @@
 module.exports = {
+    base: '/september-UI/',
     title: 'September UI',
     description: 'A handy UI library',
     themeConfig: {

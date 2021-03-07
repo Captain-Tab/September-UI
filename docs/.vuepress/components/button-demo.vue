@@ -4,9 +4,7 @@
       <s-button icon="setting">默认按钮</s-button>
       <s-button loading="true">默认按钮</s-button>
 
-      <pre>
-        <code>{{content}}</code>
-      </pre>
+      <pre><code>{{content}}</code></pre>
     </div>
 </template>
 
@@ -23,7 +21,7 @@ export default {
         <s-button>默认按钮</s-button>
         <s-button icon="setting">默认按钮</s-button>
         <s-button loading="true">默认按钮</s-button>
-      `
+      `.replace(/\t+| +/g, '').trim()
     }
   }
 }
